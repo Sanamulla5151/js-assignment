@@ -4,7 +4,25 @@
     <h1><b>Display Current Day and Time</b></h1>
 
 
-    <script src="first.js">
+    <script >
+        var today=new Date();
+
+var day=today.getDay();
+
+var daylist=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+var hour=today.getHours();
+
+var minute=today.getMinutes();
+
+var second=today.getSeconds();
+
+var meridiem=(hour >12)?"PM":"AM";
+
+document.write("Today is :"+daylist[day]);
+
+document.write("<br>"+"Current Time is :"+hour+""+meridiem+":"+minute+":"+second);
+
     </script>
    
 
